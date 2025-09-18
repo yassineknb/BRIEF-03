@@ -10,7 +10,7 @@ const RoutineCard = ({ routine, onDeleteRoutine, onToggleRoutine, isCompleted })
       <div className="flex gap-2">
         <button
           onClick={() => onToggleRoutine(routine.id)}
-          className={`px-3 py-1 rounded-md text-sm font-medium transition ${
+          className={`w-32 h-10 rounded-lg flex items-center justify-center text-sm font-medium px-3 py-1 rounded-md text-sm font-medium transition ${
             isCompleted
               ? "bg-gray-500 text-white"
               : "bg-purple-500 text-white hover:bg-purple-600"
